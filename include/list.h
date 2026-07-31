@@ -219,7 +219,7 @@ typedef struct xLIST
  * Access macro to retrieve the value of the list item at the head of a given
  * list.
  *
- * \page listGET_LIST_ITEM_VALUE listGET_LIST_ITEM_VALUE
+ * \page listGET_ITEM_VALUE_OF_HEAD_ENTRY listGET_ITEM_VALUE_OF_HEAD_ENTRY
  * \ingroup LinkedList
  */
 #define listGET_ITEM_VALUE_OF_HEAD_ENTRY( pxList )        ( ( ( pxList )->xListEnd ).pxNext->xItemValue )

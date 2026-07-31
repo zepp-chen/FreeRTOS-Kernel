@@ -604,7 +604,7 @@ typedef struct QueueDefinition   * QueueSetMemberHandle_t;
  * BaseType_t xQueueGenericSend(
  *                                  QueueHandle_t xQueue,
  *                                  const void * pvItemToQueue,
- *                                  TickType_t xTicksToWait
+ *                                  TickType_t xTicksToWait,
  *                                  BaseType_t xCopyPosition
  *                              );
  * @endcode
@@ -1189,7 +1189,7 @@ void vQueueDelete( QueueHandle_t xQueue ) PRIVILEGED_FUNCTION;
  *
  *  // ...
  *
- *  if( xHigherPrioritytaskWoken == pdTRUE )
+ *  if( xHigherPriorityTaskWoken == pdTRUE )
  *  {
  *      // Writing to the queue caused a task to unblock and the unblocked task
  *      // has a priority higher than or equal to the priority of the currently
@@ -1451,7 +1451,7 @@ BaseType_t xQueueGiveFromISR( QueueHandle_t xQueue,
  *      // task will be woken.
  *  }
  *
- *  if( xHigherPrioritytaskWoken == pdTRUE );
+ *  if( xHigherPriorityTaskWoken == pdTRUE )
  *  {
  *      // As xHigherPriorityTaskWoken is now set to pdTRUE then a context
  *      // switch should be requested. The macro used is port specific and

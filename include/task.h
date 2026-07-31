@@ -3270,7 +3270,7 @@ uint32_t ulTaskGenericNotifyTake( UBaseType_t uxIndexToWaitOn,
 /**
  * task. h
  * @code{c}
- * BaseType_t xTaskNotifyStateClearIndexed( TaskHandle_t xTask, UBaseType_t uxIndexToCLear );
+ * BaseType_t xTaskNotifyStateClearIndexed( TaskHandle_t xTask, UBaseType_t uxIndexToClear );
  *
  * BaseType_t xTaskNotifyStateClear( TaskHandle_t xTask );
  * @endcode
